@@ -172,6 +172,7 @@ header .nav nav .button:hover {
 }
 body {
   max-width: 500px;
+  margin: 0 auto;
   height: 100%;
   background-image: url("../imgs/landing-page-photo.jpg");
   background-repeat: no-repeat;
