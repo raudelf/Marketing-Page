@@ -126,3 +126,42 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html,
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+}
+header {
+  width: 100%;
+}
+header .nav {
+  width: 95%;
+  margin: 2% auto;
+  background: chocolate;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav #logo {
+  width: 20%;
+}
+header .nav nav {
+  float: right;
+}
+header .nav nav a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  max-width: 500px;
+  height: 100%;
+  background-image: url("../imgs/landing-page-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% cover;
+}
