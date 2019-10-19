@@ -143,19 +143,32 @@ header {
 header .nav {
   width: 95%;
   margin: 2% auto;
-  background: chocolate;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header .nav #logo {
   width: 20%;
 }
 header .nav nav {
-  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
 }
 header .nav nav a {
   text-decoration: none;
   color: #fff;
+}
+header .nav nav .button {
+  width: 85px;
+  padding: 3% 0;
+  border-radius: 4px;
+  background: #E76F25;
+  text-align: center;
+}
+header .nav nav .button:hover {
+  filter: opacity(0.5);
 }
 body {
   max-width: 500px;

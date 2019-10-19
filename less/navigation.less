@@ -3,23 +3,36 @@ header {
     .nav{
         width: 95%;
         margin: 2% auto;
-        background: chocolate;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         #logo{
             width: 20%;
         }
 
         nav{
-            float: right;
-            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 35%;
+
             a{
                 text-decoration: none;
                 color: #fff;
             }
 
-            
+            .button{
+                width: 85px;
+                padding: 3% 0;
+                border-radius: 4px;
+                background: #E76F25;
+                text-align: center;
+
+                &:hover {
+                    filter: opacity(.5);
+                }
+            }
         }
     }
 }
