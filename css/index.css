@@ -168,14 +168,18 @@ header .nav nav .button {
   text-align: center;
 }
 header .nav nav .button:hover {
-  filter: opacity(0.5);
+  filter: opacity(0.8);
 }
-body {
+body .container {
   max-width: 500px;
+  height: 1000px;
   margin: 0 auto;
-  height: 100%;
   background-image: url("../imgs/landing-page-photo.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 150vmax;
+}
+body footer {
+  width: 100%;
+  background: tomato;
 }
