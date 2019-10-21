@@ -1,17 +1,84 @@
 body{
-    
+    background-image: url("../imgs/landing-page-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180vmax;
+
     .container {
         max-width: 500px;
-        height: 1000px;
         margin: 0 auto;
-        background-image: url("../imgs/landing-page-photo.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 150vmax;
+
+        .content {
+            height: 80vmax;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: space-between;
+            text-align: center;
+            color: #fff;
+
+            .headline {
+                width: 100%;
+                .intro {
+                    font-size: 1.4rem;
+                    padding: 4% 0;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .signup {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .btn {
+                    width: 95%;
+                    margin: 4% 0;
+                    padding: 3% 0;
+                    border-radius: 10px;
+                    background: #E76F25;
+                    text-align: center;
+
+                    &:hover {
+                        filter: opacity(.8);
+                    }
+                    
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 1.8em;
+                    }
+                }
+
+                .login {
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 
     footer{
         width: 100%;
-        background: tomato;
+        background: #2B444B;
+        color: white;
+        text-align: center;
+
+        .links {
+            padding: 60px 0;
+
+            a {
+                color: white;
+            }
+        }
+
+        p {
+            padding: 20px 0;
+        }
     }
 }
