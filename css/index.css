@@ -1,6 +1,16 @@
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .desktop-width {
-    width: 100%;
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .desktop2-width {
+    width: 80%;
+  }
+}
+@media (min-width: 1700px) {
+  .desktop3-width {
+    width: 80%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -155,22 +165,39 @@ header .nav {
   align-items: center;
 }
 header .nav #logo {
-  width: 30%;
+  width: 25%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   header .nav #logo {
     width: 15%;
+  }
+}
+@media (min-width: 1700px) {
+  header .nav #logo {
+    width: 10%;
   }
 }
 header .nav nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
+  width: 60%;
 }
 header .nav nav a {
   text-decoration: none;
   color: #fff;
+}
+header .nav nav .otherbtn {
+  width: 85px;
+  padding: 3% 0;
+  border-radius: 4px;
+  text-align: center;
+}
+header .nav nav .otherbtn:hover {
+  background: white;
+}
+header .nav nav .otherbtn:hover a {
+  color: #E76F25;
 }
 header .nav nav .button {
   width: 85px;
@@ -180,11 +207,24 @@ header .nav nav .button {
   text-align: center;
 }
 header .nav nav .button:hover {
-  filter: opacity(0.8);
+  background: white;
 }
-@media (min-width: 1000px) {
+header .nav nav .button:hover a {
+  color: #E76F25;
+}
+@media (min-width: 900px) {
   header .nav nav {
-    width: 15%;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  header .nav nav {
+    width: 30%;
+  }
+}
+@media (min-width: 1700px) {
+  header .nav nav {
+    width: 20%;
   }
 }
 body {
@@ -194,7 +234,7 @@ body {
   background-size: 180vmax;
 }
 body .container {
-  min-width: 500px;
+  min-width: 400px;
   margin: 0 auto;
 }
 body .container .content {
@@ -216,9 +256,14 @@ body .container .content .headline .intro {
 body .container .content .headline img {
   width: 80%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   body .container .content .headline img {
-    width: 60%;
+    width: 40%;
+  }
+}
+@media (min-width: 1700px) {
+  body .container .content .headline img {
+    width: 30%;
   }
 }
 body .container .content .signup {
@@ -243,17 +288,50 @@ body .container .content .signup .btn a {
   font-weight: bold;
   font-size: 1.8em;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
+  body .container .content .signup .btn a {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1700px) {
+  body .container .content .signup .btn a {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 900px) {
   body .container .content .signup .btn {
-    width: 70%;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  body .container .content .signup .btn {
+    width: 40%;
+  }
+}
+@media (min-width: 1700px) {
+  body .container .content .signup .btn {
+    width: 30%;
   }
 }
 body .container .content .signup .login a {
   color: white;
 }
-@media (min-width: 1000px) {
+body .container .content .signup .login a:hover {
+  color: #E76F25;
+}
+@media (min-width: 900px) {
   body .container {
-    width: 100%;
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  body .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1700px) {
+  body .container {
+    width: 80%;
   }
 }
 body footer {
@@ -267,6 +345,9 @@ body footer .links {
 }
 body footer .links a {
   color: white;
+}
+body footer .links a:hover {
+  color: #E76F25;
 }
 body footer p {
   padding: 20px 0;
