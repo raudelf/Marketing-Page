@@ -5,7 +5,7 @@ body{
     background-size: 180vmax;
 
     .container {
-        min-width: 500px;
+        min-width: 400px;
         margin: 0 auto;
 
         .content {
@@ -28,7 +28,11 @@ body{
                     width: 80%;
 
                     @media @desktop {
-                        width: 60%;
+                        width: 40%;
+                    }
+
+                    @media @desktop3 {
+                        width: 30%;
                     }
                 }
             }
@@ -55,21 +59,43 @@ body{
                         text-decoration: none;
                         font-weight: bold;
                         font-size: 1.8em;
+
+                        @media @desktop2 {
+                            font-size: 2em;
+                        }
+
+                        @media @desktop3 {
+                            font-size: 2.5em;
+                        }
                     }
 
                     @media @desktop {
-                        width: 70%;
+                        width: 50%;
+                    }
+
+                    @media @desktop2 {
+                        width: 40%;
+                    }
+
+                    @media @desktop3 {
+                        width: 30%;
                     }
                 }
 
                 .login {
                     a {
                         color: white;
+
+                        &:hover {
+                            color: @buttonColor;
+                        }
                     }
                 }
             }
         }
         .desktop-width();
+        .desktop2-width();
+        .desktop3-width();
     }
 
     footer{
@@ -83,6 +109,10 @@ body{
 
             a {
                 color: white;
+
+                &:hover {
+                    color: @buttonColor;
+                }
             }
         }
 
