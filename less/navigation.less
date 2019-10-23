@@ -10,10 +10,13 @@ header {
         align-items: center;
 
         #logo{
-            width: 30%;
+            width: 25%;
 
             @media @desktop{
                 width: 15%;
+            }
+            @media @desktop3{
+                width: 10%;
             }
         }
 
@@ -21,26 +24,53 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 35%;
+            width: 60%;
 
             a{
                 text-decoration: none;
                 color: #fff;
             }
 
+            .otherbtn {
+                width: 85px;
+                padding: 3% 0;
+                border-radius: 4px;
+                text-align: center;
+
+                &:hover{
+                    background: white;
+                    
+                    a{
+                        color: @buttonColor;
+                    }
+                }
+            }
+
             .button{
                 width: 85px;
                 padding: 3% 0;
                 border-radius: 4px;
-                background: #E76F25;
+                background: @buttonColor;
                 text-align: center;
 
                 &:hover {
-                    filter: opacity(.8);
+                    background: white;
+
+                    a {
+                        color: @buttonColor;
+                    }
                 }
             }
             @media @desktop {
-                width: 15%;
+                width: 50%;
+            }
+
+            @media @desktop2 {
+                width: 30%;
+            }
+
+            @media @desktop3 {
+                width: 20%;
             }
         }
     
