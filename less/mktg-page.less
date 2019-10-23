@@ -5,7 +5,7 @@ body{
     background-size: 180vmax;
 
     .container {
-        max-width: 500px;
+        min-width: 500px;
         margin: 0 auto;
 
         .content {
@@ -26,6 +26,10 @@ body{
 
                 img {
                     width: 80%;
+
+                    @media @desktop {
+                        width: 60%;
+                    }
                 }
             }
 
@@ -39,7 +43,7 @@ body{
                     margin: 4% 0;
                     padding: 3% 0;
                     border-radius: 10px;
-                    background: #E76F25;
+                    background: @buttonColor;
                     text-align: center;
 
                     &:hover {
@@ -52,6 +56,10 @@ body{
                         font-weight: bold;
                         font-size: 1.8em;
                     }
+
+                    @media @desktop {
+                        width: 70%;
+                    }
                 }
 
                 .login {
@@ -61,11 +69,12 @@ body{
                 }
             }
         }
+        .desktop-width();
     }
 
     footer{
         width: 100%;
-        background: #2B444B;
+        background: @footerColor;
         color: white;
         text-align: center;
 
