@@ -355,16 +355,110 @@ body footer p {
 #aBody {
   background: #2B444B;
 }
+#aBody .container {
+  width: 100%;
+}
+#aBody .container h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+}
 #aBody .container .profiles {
   width: 100%;
-  background: white;
+  margin: 0 auto;
 }
-#aBody .container .profiles .box h2 {
-  color: #E76F25;
+#aBody .container .profiles .box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0;
+}
+#aBody .container .profiles .box .prof {
+  width: 50%;
+}
+#aBody .container .profiles .box .prof img {
+  width: 100px;
+  height: auto;
+}
+@media (min-width: 900px) {
+  #aBody .container .profiles .box .prof img {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #aBody .container .profiles .box .prof img {
+    width: 350px;
+  }
+}
+@media (min-width: 1700px) {
+  #aBody .container .profiles .box .prof img {
+    width: 350px;
+  }
+}
+#aBody .container .profiles .box .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#aBody .container .profiles .box .info h2 {
   font-size: 1.6em;
   font-weight: bold;
   margin-bottom: 5px;
 }
-#aBody .container .profiles .box h3 {
+#aBody .container .profiles .box .info h3 {
   font-weight: bold;
+}
+#aBody .container .profiles .box .info .gitHub {
+  background: #E76F25;
+  border-radius: 5px;
+  padding: 4% 20%;
+}
+#aBody .container .profiles .box .info .gitHub a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media (min-width: 900px) {
+  #aBody .container .profiles .box .info .gitHub {
+    padding: 5% 10%;
+  }
+}
+@media (min-width: 1200px) {
+  #aBody .container .profiles .box .info .gitHub {
+    padding: 5% 10%;
+  }
+}
+@media (min-width: 1700px) {
+  #aBody .container .profiles .box .info .gitHub {
+    padding: 5% 10%;
+  }
+}
+#aBody .container .profiles .box1 {
+  background: white;
+}
+#aBody .container .profiles .box2 {
+  background: silver;
+}
+#aBody .container .profiles .box2 .info h2 {
+  color: #E76F25;
+}
+@media (min-width: 900px) {
+  #aBody .container {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  #aBody .container {
+    width: 50%;
+  }
+}
+@media (min-width: 1700px) {
+  #aBody .container {
+    width: 50%;
+  }
 }
