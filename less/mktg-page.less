@@ -1,0 +1,119 @@
+body{
+    background-image: url("../imgs/landing-page-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 180vmax;
+
+    .container {
+        min-width: 400px;
+        margin: 0 auto;
+
+        .content {
+            height: 100vh;
+            .flex (flex, column, space-evenly, space-between, center);
+            color: #fff;
+
+            .headline {
+                width: 100%;
+                .intro {
+                    font-size: 1.4rem;
+                    padding: 4% 0;
+                }
+
+                img {
+                    width: 80%;
+
+                    @media @desktop {
+                        width: 40%;
+                    }
+
+                    @media @desktop3 {
+                        width: 30%;
+                    }
+                }
+            }
+
+            .signup {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .btn {
+                    width: 95%;
+                    margin: 4% 0;
+                    padding: 3% 0;
+                    border-radius: 10px;
+                    background: @buttonColor;
+                    text-align: center;
+
+                    &:hover {
+                        filter: opacity(.8);
+                    }
+                    
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 1.8em;
+
+                        @media @desktop2 {
+                            font-size: 2em;
+                        }
+
+                        @media @desktop3 {
+                            font-size: 2.5em;
+                        }
+                    }
+
+                    @media @desktop {
+                        width: 50%;
+                    }
+
+                    @media @desktop2 {
+                        width: 40%;
+                    }
+
+                    @media @desktop3 {
+                        width: 30%;
+                    }
+                }
+
+                .login {
+                    a {
+                        color: white;
+
+                        &:hover {
+                            color: @buttonColor;
+                        }
+                    }
+                }
+            }
+        }
+        .desktop-width();
+        .desktop2-width();
+        .desktop3-width();
+    }
+
+    footer{
+        width: 100%;
+        background: @footerColor;
+        color: white;
+        text-align: center;
+
+        .links {
+            padding: 60px 0;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: @buttonColor;
+                }
+            }
+        }
+
+        p {
+            padding: 20px 0;
+        }
+    }
+}

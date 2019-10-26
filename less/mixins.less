@@ -1,0 +1,25 @@
+.desktop-width {
+    @media @desktop {
+        width: 90%;
+    }
+}
+
+.desktop2-width {
+    @media @desktop2 {
+        width: 80%;
+    }
+}
+
+.desktop3-width {
+    @media @desktop3 {
+        width: 80%;
+    }
+}
+
+.flex (@flex, @column, @space, @space2, @align) {
+    display: @flex;
+    flex-direction: @column;
+    justify-content: @space;
+    align-content: @space2;
+    text-align: @align;
+}

@@ -1,0 +1,114 @@
+#aBody {
+    background: @footerColor;
+
+    .container {
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            color: white;
+        }
+        .profiles {
+            width: 100%;
+            margin: 0 auto;
+
+            .box {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                margin: 2% 0;
+                .prof {
+                    width: 50%;
+
+                    img {
+                        width: 100px;
+                        height: auto;
+
+                        @media @desktop {
+                            width: 300px;
+                        }
+                
+                        @media @desktop2 {
+                            width: 350px;
+                        }
+                
+                        @media @desktop3 {
+                            width: 350px;
+                        }
+                    }
+                }
+
+                .info {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        font-size: 1.6em;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    h3 {
+                        font-weight: bold;
+                    }
+                    
+                    .gitHub {
+                        background: @buttonColor;
+                        border-radius: 5px;
+                        padding: 4% 20%;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        @media @desktop {
+                            padding: 5% 10%;
+                        }
+                
+                        @media @desktop2 {
+                            padding: 5% 10%;
+                        }
+                
+                        @media @desktop3 {
+                            padding: 5% 10%;
+                        }
+                    }
+                }
+
+                
+            }
+
+            .box1{
+                background: white;                
+            }
+
+            .box2 {
+                background: silver;
+
+                .info{
+                    
+                    h2 {
+                        color: @buttonColor;
+                    }
+                }
+            }
+        }
+        @media @desktop {
+            width: 40%;
+        }
+
+        @media @desktop2 {
+            width: 50%;
+        }
+
+        @media @desktop3 {
+            width: 50%;
+        }
+    }
+}
